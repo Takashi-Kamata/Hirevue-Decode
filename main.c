@@ -1,10 +1,13 @@
 #include "stdio.h"
 #include "string.h"
 #include "stdbool.h"
+
+#define MAX_LIMIT 200
 int main(int argc, char *argv[])
 {
-    char input[100] = "o o ae2mntst d n ute omnsyumgthv.Yunwhv  iue oadayfrhrcmet o ih ae";
-
+    char input[MAX_LIMIT];
+    // char input[100] = "o o ae2mntst d n ute omnsyumgthv.Yunwhv  iue oadayfrhrcmet o ih ae";
+    scanf("%[^\n]%*c", input);
     for (int i = 0; i < strlen(input); i++)
     {
         if (input[i] == '\n')
