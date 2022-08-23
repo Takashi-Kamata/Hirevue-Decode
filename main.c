@@ -2,7 +2,8 @@
 #include "string.h"
 #include "stdbool.h"
 
-#define MAX_LIMIT 200
+#define MAX_LIMIT 200 // Arbitrary limit
+
 int main(int argc, char *argv[])
 {
     char input[MAX_LIMIT];
@@ -22,7 +23,7 @@ int main(int argc, char *argv[])
     printf("%s\n", input);
     int starting_mid = strlen(input) / 2;
     int last = strlen(input);
-    char output[100];
+    char output[MAX_LIMIT];
     bool mid = true;
     int mid_counter = 0;
     int start_counter = 0;
